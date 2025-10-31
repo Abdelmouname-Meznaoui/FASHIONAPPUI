@@ -12,6 +12,8 @@ dependencies:
     sdk: flutter
   google_fonts: ^6.1.0
   cupertino_icons: ^1.0.8
+  video_player: ^2.10.0
+  chewie: ^1.7.5
 
 dev_dependencies:
   flutter_test:
@@ -25,3 +27,5 @@ flutter:
     - assets/images/logo.png
     - assets/images/underlogo.png
     - assets/images/menuicon.png
+    - assets/videos/video.mp4
+    - assets/images/
