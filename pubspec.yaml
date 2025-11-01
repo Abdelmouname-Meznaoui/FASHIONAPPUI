@@ -28,4 +28,7 @@ flutter:
     - assets/images/underlogo.png
     - assets/images/menuicon.png
     - assets/videos/video.mp4
-    - assets/images/
+    - assets/images/bag.png
+    - assets/images/profile.png
+    - assets/images/heart.png
+    - assets/images/notif.png
