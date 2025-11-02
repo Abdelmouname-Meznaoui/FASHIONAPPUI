@@ -50,8 +50,179 @@ class _homeState extends State<home> {
                       scale: 1.5,
 
                         child: VideoPlayer(_controller))),
-                const SizedBox(height: 20),
-                const SizedBox(height: 20),
+                 SizedBox(height: 120),
+                 SizedBox(height: 20),
+                 Row(
+                   children: [
+                     SizedBox(width: 30,),
+                     Text(
+                       'Categories',
+                       style: GoogleFonts.inter(
+                         fontSize: 15 ,
+                         fontWeight: FontWeight.w600 ,
+
+                       ),
+
+
+                     ),
+
+
+                   ],
+
+
+
+                 ),
+
+
+                Align(
+                  alignment:Alignment.centerLeft,
+                  child:SingleChildScrollView(
+                    scrollDirection:Axis.horizontal,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        SizedBox(width: 20,),
+                        Container(
+                          height: 130,
+                          width: 100,
+                          child: Column(
+                            children: [
+                              Container(
+                                padding:EdgeInsets.fromLTRB(10, 10, 10, 10),
+                                child  :Image.asset('assets/images/man.png'),
+                                height: 100,
+                                width: 100,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(35),
+                                  color: Color(0x00FFFFFF),
+
+                                ),
+                              ),
+                              SizedBox(height: 7,),
+                              Text('Men',
+                                style:GoogleFonts.inter(
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 12,
+                                    color: Color(0xFF5A5555)
+                                ),),
+                            ],
+                          ),
+                        ),
+                        SizedBox(width: 20,),
+                        Container(
+                          height: 130,
+                          width: 100,
+                          child: Column(
+                            children: [
+                              Container(
+                                padding:EdgeInsets.fromLTRB(10, 10, 10, 10),
+                                child  :Image.asset('assets/images/woman.png'),
+                                height: 100,
+                                width: 100,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(35),
+                                  color: Color(0x00FFFFFF),
+
+                                ),
+                              ),
+                              SizedBox(height: 7,),
+                              Text('Women',
+                                style:GoogleFonts.inter(
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 12,
+                                    color: Color(0xFF5A5555)
+                                ),),
+                            ],
+                          ),
+                        ),
+                        SizedBox(width: 20,),
+                        Container(
+                          height: 130,
+                          width: 100,
+                          child: Column(
+                            children: [
+                              Container(
+                                padding:EdgeInsets.fromLTRB(10, 10, 10, 10),
+                                child  :Image.asset('assets/images/kids.png'),
+                                height: 100,
+                                width: 100,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(35),
+                                  color: Color(0x00FFFFFF),
+
+                                ),
+                              ),
+                              SizedBox(height: 7,),
+                              Text('Kids',
+                                style:GoogleFonts.inter(
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 12,
+                                    color: Color(0x00FFFFFF)
+                                ),),
+                            ],
+                          ),
+                        ),
+                        SizedBox(width: 20,),
+                        Container(
+                          height: 130,
+                          width: 100,
+                          child: Column(
+                            children: [
+                              Container(
+                                padding:EdgeInsets.fromLTRB(10, 10, 10, 10),
+                                child  :Image.asset('assets/images/deals.png'),
+                                height: 100,
+                                width: 100,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(35),
+                                  color: Color(0xFFF6F6F6),
+
+                                ),
+                              ),
+                              SizedBox(height: 7,),
+                              Text('Deals',
+                                style:GoogleFonts.inter(
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 12,
+                                    color: Color(0x00FFFFFF)
+                                ),),
+                            ],
+                          ),
+                        ),
+                        SizedBox(width: 20),
+                        Container(
+                          height: 130,
+                          width: 100,
+                          child: Column(
+                            children: [
+                              Container(
+                                padding:EdgeInsets.fromLTRB(10, 10, 10, 10),
+                                child  :Image.asset('assets/images/home.png'),
+                                height: 100,
+                                width: 100,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(35),
+                                  color: Color(0x00FFFFFF),
+
+                                ),
+                              ),
+                              SizedBox(height: 7,),
+                              Text('Home',
+                                style:GoogleFonts.inter(
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 12,
+                                    color: Color(0xFF5A5555)
+                                ),),
+                            ],
+                          ),
+                        ),
+                      ],
+
+                    ),
+                  ),
+
+                )
+
               ],
             ),
             Positioned(
@@ -67,7 +238,6 @@ class _homeState extends State<home> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Color(0xFFFFFFF),
-        selectedFontSize:,
         
         selectedItemColor: Colors.black,
         currentIndex: 0,
